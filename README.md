@@ -1,6 +1,8 @@
 # lxd-pihole
 Script for getting a pihole set up with lxd on Ubuntu
 
+THIS IS INTENDED FOR A FRESH UBUNTU INSTALL, THERE ARE CURRENTLY NO CHECKS FOR EXISTING LXD INSTALL OR CONTAINER NAMES
+
 I haven't thoroughly tested this yet.
 
 
