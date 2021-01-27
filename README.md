@@ -5,6 +5,5 @@ I haven't thoroughly tested this yet.
 
 
 ```
-sudo apt install curl -y
-curl -sSL https://raw.githubusercontent.com/Lyamc/lxd-pihole/main/lxd-pihole.sh | bash
+wget https://raw.githubusercontent.com/Lyamc/lxd-pihole/main/lxd-pihole.sh; chmod +x lxd-pihole.sh; ./lxd-pihole.sh
 ```
