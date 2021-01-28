@@ -17,6 +17,7 @@ Installs LXD, configures pihole container, installs pihole to that container, al
 If you want to access the web interface, you need a simple proxy to the container IP
 
 Haproxy example: /etc/haproxy/haproxy.conf
+
 Make it so that example.com/pihole --> pi.hole/admin
 
 ```
@@ -54,6 +55,7 @@ defaults
         errorfile 502 /etc/haproxy/errors/502.http
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
+
 frontend http
     bind *:80 alpn h2
     bind *:443 ssl crt /etc/letsencrypt/blahblah.pem alpn h2
@@ -79,7 +81,9 @@ backend pihole-dns
 ```
 
 Nginx example: /etc/nginx/sites-available/default
+
 Makes it so that example.com/pihole --> pi.hole/admin
+
 The important bit is the proxy_pass section.
 
 ```
