@@ -101,6 +101,9 @@ COMMIT
 RULELIST
 
 sudo ufw enable
+
+lxc network set lxdbr0 raw.dnsmasq dhcp-option=6,$PIHOLEIP
+
 }
 
 function askreboot
