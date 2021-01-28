@@ -71,11 +71,11 @@ frontend http
 backend rootserver
     timeout connect 10s
     timeout server 10s
-    server wwwserver <webserver address goes here>:80
+    server wwwserver <<<<< webserver ip address goes here >>>>>:80
 
 backend pihole-dns
    reqirep ^([^\ :]*)\ /pihole/(.*)     \1\ /admin/\2
-   server pihole <the pihole container goes here>:80
+   server pihole <<<<< the pihole container ip address goes here >>>>:80
 ```
 
 Nginx example: /etc/nginx/sites-available/default
