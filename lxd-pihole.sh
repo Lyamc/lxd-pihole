@@ -50,7 +50,7 @@ while true; do
 	ip addr | grep global | awk '{print NR ") "$2}' OFS='\t'
 	echo ""
 
-	read -r -p "Select disk number (1, 2...): " response1
+	read -r -p "Select number (1, 2...): " response1
 	IP=$(ip addr | grep global | awk -v var=$response1 'FNR == var {print $2}')
 	echo ""
 	IFS=. read IP1 IP2 IP3 IP4SUB <<< "$IP"
